@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@mipmap/backimage"
+
+
+    tools:context=".Views.Fragment.SliderFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slider_container"
+        android:layout_margin="20dp"
+
+        >
+<!--        <android.support.v4.view.ViewPager-->
+<!--            android:id="@+id/viewpager"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"/>-->
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:id="@+id/btn_skip"
+            android:text="@string/skip"
+            android:textSize="10sp"
+            android:layout_marginTop="@dimen/dp_2"
+            android:layout_marginRight="@dimen/dp_2"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:layout_marginBottom="@dimen/dp_2"
+            android:background="@color/light_gray"
+            android:textColor="@color/black"
+
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

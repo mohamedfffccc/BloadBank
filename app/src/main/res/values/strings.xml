@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">BloadBank</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">skip</string>
+    <string name="mobile_phone">mobile phone</string>
+    <string name="password">password</string>
+    <string name="forget_password">forget password</string>
+    <string name="remember_me">remember me</string>
+    <string name="login">Login</string>
+    <string name="Register">Register</string>
+    <string name="forget_pass">forget password</string>
+    <string name="send">send</string>
+    <string name="name">name</string>
+    <string name="email">email</string>
+    <string name="blood">blood type</string>
+    <string name="last_donation">last donation date</string>
+    <string name="city">city</string>
+    <string name="mob_phone">mobile number</string>
+    <string name="new_account">create new account</string>
+    <string name="pass_confirm">confirm password</string>
+    <string name="date_of_birth">date of birth</string>
+    <string name="a_code_change_password">a code change password</string>
+    <string name="confirmation_code">confirmation code</string>
+    <string name="new_password">new password</string>
+    <string name="confirm_new_password">confirm new password</string>
+    <string name="change_password">change password</string>
+    <string name="title_activity_home_cycle">HomeCycle</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="info">Info</string>
+    <string name="notifications">Notifications</string>
+    <string name="favourite">Favourite</string>
+    <string name="home">Home</string>
+    <string name="usage">Usage</string>
+    <string name="valuates_app_on_store">Valuates App On Store</string>
+    <string name="log_out">Log Out</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="about">About App</string>
+    <string name="articles">Articles</string>
+    <string name="donation_orders">Donation orders</string>
+    <string name="details">Details</string>
+    <string name="call">Call</string>
+    <string name="age">age</string>
+    <string name="number_of_pockets">Number of Pockets</string>
+    <string name="hospital_name">Hospital Name</string>
+    <string name="hospital_address">Hospital Address</string>
+    <string name="notes">Notes</string>
+    <string name="message_address">message address</string>
+    <string name="message">message</string>
+    <string name="modify_information">Edit information</string>
+    <string name="info_notifications">modify information</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="save">save</string>
+    <string name="governement">governement</string>
+    <string name="notification_settings">notification settings</string>
+    <string name="dismiss">dismiss</string>
+
+</resources>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteback"
+
+
+    tools:context=".Views.Fragment.RegisterFragment">
+
+    <ScrollView
+
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/info_button_register"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@color/white"
+
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/info_tvchange"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_30"
+                android:layout_margin="@dimen/dim_3dp"
+                android:gravity="center"
+                android:text="@string/modify_information"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dim_25sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/info_name"
+                android:layout_width="match_parent"
+
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/info_tvchange"
+                android:layout_margin="@dimen/dim_3dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/info_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/info_name"
+                android:layout_margin="@dimen/dim_3dp"
+                android:background="@drawable/edittext_background"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp_15" />
+
+            <LinearLayout
+                android:id="@+id/info_calender"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/info_email"
+                android:layout_margin="@dimen/dim_3dp"
+                android:background="@drawable/edittext_background"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/info_butcal"
+
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginLeft="@dimen/dim_3dp"
+                    android:layout_marginRight="@dimen/dim_3dp"
+
+                    android:background="@mipmap/cal"
+                    android:gravity="end" />
+
+                <TextView
+                    android:id="@+id/info_datebirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_20"
+                    android:layout_margin="@dimen/dim_3dp"
+                    android:layout_marginTop="@dimen/dim_3dp"
+                    android:layout_marginBottom="@dimen/dim_3dp"
+                    android:gravity="start"
+                    android:hint="@string/date_of_birth"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/sp_15" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/info_bloadtype"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/info_calender"
+                android:layout_margin="@dimen/dim_3dp"
+
+
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/sp_15" />
+
+            <LinearLayout
+                android:id="@+id/info_date_cal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/info_bloadtype"
+                android:layout_margin="@dimen/dim_3dp"
+                android:background="@drawable/edittext_background"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/info_but_donationdate"
+                    android:layout_width="@dimen/dp_50"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_marginLeft="@dimen/dim_3dp"
+
+                    android:layout_marginRight="@dimen/dim_3dp"
+                    android:background="@mipmap/cal"
+                    android:gravity="end" />
+
+                <TextView
+                    android:id="@+id/ed_info_date_of_donation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dim_3dp"
+                    android:layout_marginTop="@dimen/dim_3dp"
+                    android:layout_marginBottom="@dimen/dim_3dp"
+                    android:gravity="start"
+                    android:hint="@string/last_donation"
+                    android:textColorHint="@color/black"
+                    android:textSize="@dimen/sp_15" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/info_governate"
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/info_date_cal"
+                android:layout_margin="@dimen/dim_3dp"
+
+                android:gravity="start" />
+
+            <Spinner
+                android:id="@+id/info_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@id/info_governate"
+                android:layout_margin="@dimen/dim_3dp"
+                android:gravity="start" />
+
+            <EditText
+                android:id="@+id/info_phone_nu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@+id/info_city"
+                android:layout_margin="@dimen/dim_3dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="start"
+                android:hint="@string/mob_phone"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/info_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@+id/info_phone_nu"
+                android:layout_margin="@dimen/dim_3dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="start"
+                android:hint="@string/password"
+
+                android:inputType="numberPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                android:textSize="@dimen/sp_15" />
+
+            <EditText
+                android:id="@+id/info_password_sure"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_below="@+id/info_password"
+                android:layout_margin="@dimen/dim_3dp"
+                android:background="@drawable/edittext_background"
+                android:gravity="start"
+                android:hint="@string/pass_confirm"
+                android:inputType="numberPassword"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+
+                android:textSize="@dimen/sp_15" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/info_button_register"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+
+
+        android:layout_margin="@dimen/dp_10"
+        android:background="@color/dark_blue"
+        android:text="@string/modify_information"
+        android:textColor="@color/black" />
+</RelativeLayout>

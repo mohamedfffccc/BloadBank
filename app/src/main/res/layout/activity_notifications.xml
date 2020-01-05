@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Views.Activity.NotificationsActivity">
+
+    <TextView
+        android:background="@color/gray"
+        android:id="@+id/notificationstext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/dim_25sp"
+        android:textColor="@color/black"
+
+        android:text="@string/notifications" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_below="@id/notificationstext"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_10"
+        android:id="@+id/bloadnotifications_notificationlist"
+        ></androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

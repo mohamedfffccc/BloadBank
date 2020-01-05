@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/orders_activity"
+    tools:context=".Views.Fragment.DonationOrdersFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:background="@drawable/edittext_background"
+        android:id="@+id/filter_layout"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35"
+        android:layout_marginTop="@dimen/dp_50"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_filter"
+
+            android:src="@drawable/ic_search_black_24dp"
+            />
+        <Spinner
+
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bloadtype_donation"
+            android:layout_weight="1"/>
+        <Spinner
+
+            android:layout_marginLeft="@dimen/dp_5"
+            android:layout_marginRight="@dimen/dp_5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/city_donation"
+            android:layout_weight="1"/>
+
+
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/filter_layout"
+        android:layout_margin="@dimen/dp_5"
+        android:id="@+id/donation_list"
+        ></androidx.recyclerview.widget.RecyclerView>
+    <ImageView
+        android:clickable="true"
+        android:layout_width="@dimen/dp_50"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/buttonadd"
+        android:layout_height="@dimen/dp_50"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_50"
+        android:id="@+id/donationrequests_addorder"
+        android:src="@drawable/plus_donation"/>
+</RelativeLayout>

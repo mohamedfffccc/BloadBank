@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Views.Activity.ui.AboutFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:id="@+id/about_tvabout"
+        android:textSize="@dimen/dim_25sp"
+        android:layout_margin="@dimen/dp_20"
+        android:text="@string/about"/>
+    <TextView
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:id="@+id/about_text"
+        android:textColor="@color/black"
+        android:layout_below="@id/about_tvabout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_40"
+        />
+
+</RelativeLayout>

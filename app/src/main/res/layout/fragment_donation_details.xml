@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Views.Fragment.DonationDetailsFragment">
+
+   <ScrollView
+       android:layout_above="@id/details_btncall"
+
+       android:id="@+id/scrool"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
+       <LinearLayout
+           android:layout_marginTop="@dimen/dp_40"
+           android:layout_marginBottom="@dimen/dp_10"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:background="@drawable/edittext_background"
+               android:layout_width="match_parent"
+               android:layout_marginBottom="@dimen/dp_5"
+               android:layout_height="@dimen/dp_50"
+               android:id="@+id/donationdetails_name"
+               android:textSize="@dimen/sp_15"
+                android:textStyle="bold"
+               android:textColor="@color/gray"
+               />
+           <TextView
+               android:textStyle="bold"
+               android:background="@drawable/edittext_background"
+               android:layout_marginBottom="@dimen/dp_5"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp_50"
+               android:id="@+id/donationdetails_age"
+               android:textSize="@dimen/sp_15"
+                
+               android:textColor="@color/gray"
+               />
+           <TextView
+               android:textStyle="bold"
+               android:background="@drawable/edittext_background"
+               android:layout_marginBottom="@dimen/dp_5"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp_50"
+               android:id="@+id/donationdetails_bloadtype"
+               android:textSize="@dimen/sp_15"
+               android:textColor="@color/gray"
+                
+               />
+           <TextView
+               android:textStyle="bold"
+               android:background="@drawable/edittext_background"
+               android:layout_marginBottom="@dimen/dp_5"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp_50"
+               android:id="@+id/donationdetails_bagsnumber"
+               android:textSize="@dimen/sp_15"
+                
+               android:textColor="@color/gray"
+               />
+           <TextView
+               android:textStyle="bold"
+               android:background="@drawable/edittext_background"
+               android:layout_marginBottom="@dimen/dp_5"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp_50"
+               android:id="@+id/donationdetails_hospitalname"
+               android:textSize="@dimen/sp_15"
+                
+               android:textColor="@color/gray"
+               />
+           <TextView
+               android:textStyle="bold"
+               android:background="@drawable/edittext_background"
+               android:layout_marginBottom="@dimen/dp_5"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp_50"
+               android:id="@+id/donationdetails_hospitaladdress"
+               android:textSize="@dimen/sp_15"
+                
+               android:textColor="@color/gray"
+               />
+           <TextView
+               android:textStyle="bold"
+               android:background="@drawable/edittext_background"
+               android:layout_marginBottom="@dimen/dp_5"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp_50"
+               android:id="@+id/donationdetails_phone"
+               android:textSize="@dimen/sp_15"
+                
+               android:textColor="@color/gray"
+               />
+           <TextView
+               android:textStyle="bold"
+               android:textColor="@color/gray"
+               android:background="@drawable/edittext_background"
+
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dp_50"
+               android:id="@+id/donationdetails_detailnotes"
+               android:textSize="@dimen/sp_15"
+                
+               />
+           <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+
+               xmlns:map="http://schemas.android.com/apk/res-auto"
+               xmlns:tools="http://schemas.android.com/tools"
+               android:id="@+id/datailsmap"
+               android:name="com.google.android.gms.maps.SupportMapFragment"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/dim_400dp"
+               android:layout_marginTop="@dimen/dp_5"
+
+               />
+
+       </LinearLayout>
+   </ScrollView>
+
+
+        <Button
+            android:textStyle="bold"
+            android:id="@+id/details_btncall"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/dp_5"
+            android:layout_height="@dimen/dp_50"
+            android:layout_alignParentBottom="true"
+            android:text="@string/call"
+            android:background="@drawable/back_button"
+            />
+
+
+</RelativeLayout>

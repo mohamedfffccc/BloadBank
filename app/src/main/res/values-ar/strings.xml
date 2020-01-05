@@ -1,0 +1,66 @@
+
+<resources>
+    <string name="app_name">BloadBank</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">مرحبا بالعالم</string>
+    <string name="skip">تخطي</string>
+    <string name="mobile_phone">الجـوال</string>
+    <string name="password">كلمـة المـرور</string>
+    <string name="forget_password">هل نسيت كلمة المرور</string>
+    <string name="remember_me">تذكـرني</string>
+    <string name="login">دخـول</string>
+    <string name="Register">انشاء حساب جديد</string>
+    <string name="forget_pass">نسيت كلـمة المـرور</string>
+    <string name="send">ارسـال</string>
+    <string name="name">الاسـم</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="blood">فصيلة الدم</string>
+    <string name="last_donation">اخر تاريخ للتبرع</string>
+    <string name="city">المدينة</string>
+<string name="mob_phone">رقم الهاتف</string>
+    <string name="new_account">انِـشـاء حسـاب جديـد</string>
+    <string name="pass_confirm">تاكيد كلمة المرور</string>
+    <string name="date_of_birth">تـاريـخ المـيلاد</string>
+    <string name="a_code_change_password">كـود تغـيير كـلمة المـرور</string>
+    <string name="confirmation_code">كـود التحـقق</string>
+    <string name="new_password">كلـمة الـسر الجـديـدة</string>
+    <string name="confirm_new_password">تاكيد كلـمة الـسر الجـديدة</string>
+    <string name="change_password">تغيير كلـمة السـر</string>
+    <string name="info">معلـومـاتي</string>
+    <string name="notifications"> التنبيـهات</string>
+    <string name="favourite">المـفضلة</string>
+    <string name="home">الرئيـسيـة</string>
+    <string name="usage">تعليـمات الاستخـدام</string>
+    <string name="valuates_app_on_store">تقييم التطبـيق علي المـتجر</string>
+    <string name="log_out">تسـجيل الخـروج</string>
+    <string name="title_activity_home_cycle">الرئيسـية</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">الرئيسـية</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="contact_us">تواصل معنا</string>
+    <string name="about">عن التطبيق</string>
+    <string name="articles">المقالات</string>
+    <string name="donation_orders">طلـبات التـبرع</string>
+    <string name="details">التفاصيل</string>
+    <string name="call">اتصال</string>
+    <string name="age">العمر</string>
+    <string name="number_of_pockets">عدد الاكياس</string>
+    <string name="hospital_name">اسـم المـستشفي</string>
+    <string name="hospital_address"> عنوان المـستشفي</string>
+    <string name="notes">ملاحظـات</string>
+    <string name="message_address">عنوان الرسـالة </string>
+    <string name="message">نص الرسـالة</string>
+    <string name="modify_information">تعديل البـيانـات</string>
+    <string name="info_notifications">modify </string>
+    <string name="title_activity_maps">الخـريطـة</string>
+    <string name="governement">المـحافـظة</string>
+    <string name="notification_settings"> اعـدادات الاشـعارات</string>
+    <string name="dismiss">تـخـطي</string>
+    <string name="save">حـفـظ</string>
+
+
+</resources>

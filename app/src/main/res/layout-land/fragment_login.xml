@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@color/whiteback"
+    tools:context=".Views.Fragment.LoginFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/login_container"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+
+            android:layout_width="@dimen/dp_100"
+
+            android:src="@drawable/ic_logo"
+            android:layout_height="@dimen/dp_100"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/image_logo"
+            />
+        <EditText
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:hint="@string/mobile_phone"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/image_logo"
+            android:inputType="number"
+            android:textSize="10sp"
+            android:id="@+id/login_telephone_number"/>
+        <EditText
+            android:textColorHint="@color/black"
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:hint="@string/password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/login_telephone_number"
+            android:layout_marginTop="@dimen/dp_10"
+            android:textSize="10sp"
+            android:id="@+id/login_userpassword"/>
+        <LinearLayout
+
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+
+            android:layout_below="@id/login_userpassword"
+            android:id="@+id/linear_remember_forget"
+            android:orientation="horizontal">
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/forget_password"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_marginRight="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_btn_forgetpassword"
+                android:background="@mipmap/forgetpass"
+                android:textColor="@color/black"
+                />
+
+            <CheckBox
+
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remember_me"
+                android:id="@+id/login_ch_remember"
+                android:textSize="10sp"
+
+                android:layout_gravity="left"
+
+                />
+
+
+        </LinearLayout>
+        <Button
+
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/login_btn_login"
+            android:text="@string/login"
+
+            android:textSize="10sp"
+            android:textColor="@color/black"
+
+            android:layout_marginTop="@dimen/dp_40"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_above="@id/login_btn_register"
+            android:background="@color/dark_green"/>
+        <Button
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:id="@+id/login_btn_register"
+            android:text="@string/new_account"
+            android:textSize="10sp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:background="@color/blue"/>
+
+
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+
+</RelativeLayout>

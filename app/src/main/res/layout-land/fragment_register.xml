@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backimage"
+
+    tools:context=".Views.Fragment.RegisterFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+
+            android:id="@+id/textview_register"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:layout_margin="@dimen/dp_5"
+            android:gravity="center"
+            android:text="@string/Register"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp_20" />
+
+        <EditText
+            android:id="@+id/ed_register_name"
+            android:layout_width="match_parent"
+
+            android:layout_height="@dimen/dp_50"
+            android:layout_below="@id/textview_register"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/ed_register_email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/ed_register_name"
+            android:layout_margin="@dimen/dp_5"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/email"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/date_calender"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/ed_register_email"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_register_cal"
+
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_5"
+                android:layout_marginBottom="5dp"
+                android:background="@mipmap/cal"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/ed_register_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_20"
+                android:layout_margin="@dimen/dp_5"
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginBottom="@dimen/dp_5"
+                android:gravity="start"
+                android:hint="@string/date_of_birth"
+                android:textColorHint="@color/black"
+                android:textSize="@dimen/sp_10" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/ed_register_blood"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/date_calender"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:hint="@string/blood"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="10sp" />
+
+        <LinearLayout
+            android:id="@+id/donation_date_cal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/ed_register_blood"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_register_donation_date"
+                android:layout_width="@dimen/dp_50"
+                android:layout_height="@dimen/dp_50"
+                android:layout_marginLeft="@dimen/dim_3dp"
+                android:layout_marginRight="@dimen/dim_3dp"
+                android:background="@mipmap/cal"
+                android:gravity="end" />
+
+            <TextView
+                android:id="@+id/ed_register_date_of_donation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:gravity="start"
+                android:hint="@string/last_donation"
+                android:textColorHint="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/governate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/donation_date_cal"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background" />
+
+        <Spinner
+            android:id="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@id/governate"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background" />
+
+        <EditText
+            android:id="@+id/register_phone_nu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/city"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="start"
+            android:hint="@string/mob_phone"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/register_phone_nu"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="start"
+            android:hint="@string/password"
+
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+id/register_password_sure"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_below="@+id/register_password"
+            android:layout_margin="5dp"
+            android:background="@drawable/edittext_background"
+            android:gravity="start"
+            android:hint="@string/pass_confirm"
+            android:inputType="numberPassword"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button_register"
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:background="@color/darkblue"
+        android:text="@string/new_account"
+        android:textColor="@color/black" />
+</RelativeLayout>
